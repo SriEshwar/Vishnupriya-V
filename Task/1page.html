@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECE Student Feedback Form </title>
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>SRI ESHWAR </h1>
+    <div class="form-container">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LDt5NyKbggc?si=AIId95bsQBBIpC_h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <h1>Student Feedback</h1>
+        <img src="feedback.webp" alt="Image">
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="rollno">Roll Number</label></td>
+                    <td><input type="text" id="rollno" name="rollno" required></td>
+                </tr>
+                <tr>
+                    <td><label for="department">Department:</label></td>
+                    <td>
+                        <input type="checkbox" id="cse" name="department" value="Computer Science">
+                        <label for="cse">CSE</label>
+                        <input type="checkbox" id="ece" name="department" value="Electrical Engineering">
+                        <label for="ece">ECE</label>
+                        <input type="checkbox" id="eee" name="department" value="EEE">
+                        <label for="eee">EEE</label>
+                        <input type="checkbox" id="it" name="department" value="IT">
+                        <label for="it">IT</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="subject">Subject:</label></td>
+                    <td><input type="text" id="subject" name="subject" required></td>
+                </tr>
+                <tr>
+                    <td><label for="faculty">Faculty Name:</label></td>
+                    <td><input type="text" id="faculty" name="faculty" required></td>
+                </tr>
+               
+                <tr>
+                    <td><label for="session-feedback">How was today's session?</label></td>
+                    <td>
+                        <input type="radio" id="like" name="session-feedback" value="like">
+                        <label for="like">&#x1F60A; Like</label>
+                        <input type="radio" id="dislike" name="session-feedback" value="dislike">
+                        <label for="dislike">&#x1F614; Dislike</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="comments">Comments:</label></td>
+                    <td><textarea id="comments" name="comments"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
